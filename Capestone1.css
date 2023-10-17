@@ -1,0 +1,39 @@
+body{
+    background-color: moccasin
+}
+.banner {
+    @include box-shadow(rgba(0, 0, 0, 0.30) 0 10px 20px 0);
+    background: url(../images/banner-bg.jpg);
+    height: 522px;
+}
+.image{
+    height: 100px;
+    width: 100px;
+}
+.container{
+    width: 1000px;
+    display: flex;
+    gap: 50px;
+}
+.align-box{
+    width: 100;
+}
+.form-align{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 200px;
+}
+/* @import "bootstrap/scss/bootstrap";
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "cursor": (
+      property: cursor,
+      class: cursor,
+      responsive: true,
+      values: auto pointer grab,
+    )
+  )
+); */

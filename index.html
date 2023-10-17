@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Project 1 </title>
+    <link href="Capestone1.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Profile</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contact</button>
+        </li>
+      </ul>
+      <div>
+        <img class="banner" src="https://enjoykickback.com/wp-content/uploads/2020/03/high-quality-coffee-bean-1170x684.jpg">
+      </div>
+      <br>
+    <div class="form-align">
+                <h1>Order Here!</h1>
+
+        <form onsubmit="onSubmit()">
+                <div class="align-box">
+                <label for="name" >Full Name:</label>
+                <br>
+                <input type="text" name="name" id="name">
+                <br>
+                <label for="name" >Email Address:</label>
+                <br>
+                <input type="text" name="email" id="email">
+                </div>
+                    <p> We'll never share your email with anyone else.</p>
+        <div class="container">
+            <div>
+                <h1>What's your poison?</h1>
+                    <input type="radio" name="coffee" id="Coffee" value="Coffee">
+                    <label for="Coffee" >Coffee</label>
+                    <br>
+                    <input type="radio" name="coffee" id="Tea" value="Tea">
+                    <label for="Tea" >Tea</label>
+                    <br>
+                    <input type="radio" name="coffee" id="Latte" value="Latte">
+                    <label for="Latte" >Latte</label>
+            </div>
+            <div>
+                <h1>Any Shots?</h1>
+                    <input type="checkbox" id="Espresso" name="shot" value="Espresso">
+                    <label for="Espresso" >Espresso</label>
+                    <br>
+                    <input type="checkbox" id="Caramel" name="shot" value="Caramel">
+                    <label for="Caramel" >Caramel</label>
+                    <br>
+                    <input type="checkbox" id="Hazelnut" name="shot" value="Hazelnut">
+                    <label for="Hazelnut" >Hazelnut</label>
+            </div>
+            <div>
+                <h1>Want Milk?</h1>
+                    <input type="radio" name="milk" id="Whole Milk" value="Whole Milk">
+                    <label for="Whole Milk" >Whole Milk</label>
+                    <br>
+                    <input type="radio" name="milk" id="Oat Milk" value="Oat Milk">
+                    <label for="Oat Milk" >Oat Milk</label>
+                    <br>
+                    <input type="radio" name="milk" id="Soy Milk" value="Soy Milk">
+                    <label for="Soy Milk" >Soy Milk</label>
+                    <br>
+                    <input type="radio" name="milk" id="No Milk" value="No Milk">
+                    <label for="No Milk" >No Milk</label>
+            </div>
+        </div>
+                <h1>Any notes?</h1>
+                <div class="align-box">
+                    <input type="text" name="notes" id="notes">
+                </div>
+    </div>
+      </form>
+    
+    
+</body>
+</html>
