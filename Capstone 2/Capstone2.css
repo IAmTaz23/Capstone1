@@ -1,0 +1,74 @@
+body{
+    background-color: green;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blueviolet;
+    color: white;
+}
+@media (max-width: 600px){
+    body {background-color: greenyellow;
+    }
+    .flex-container{
+        flex-direction: column;
+    }
+}
+.card{
+    border:2px black solid ;
+    background-color: blue;
+    border-radius: 2px;
+    height: 600px;
+    width: 200px;
+    overflow: hidden;
+    display: inline-block;
+justify-content: space-around;}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  
+}
+.container1{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-row{
+    display: flex;
+    justify-content: space-around;
+}
+.img1{
+    width: 600px;
+    height: 400px;
+}
+.container2{
+    margin: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: row;
+}
+.img2{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.container3{
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+p{
+   font-weight: bold;
+}
+span {
+  content: "\22EE";
+  padding-left: 10px;
+}
