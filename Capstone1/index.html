@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capstone Project 1 </title>
-    <link href="Capestone1.css" rel="stylesheet">
+    <link href="Capstone1.css" rel="stylesheet">
 
 </head>
 <body>
-    
+    <!-- <div class="navbar">
     <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
         <li class="nav-item" role="presentation">
           <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
@@ -17,30 +17,40 @@
           <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Profile</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contact</button>
+          <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contact</button> -->
+          <div class="navbar">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#locations">Locations</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#order now">Order Now</a></li>
+            </ul>
+          </div>
         </li>
       </ul>
-      <div>
-        <img class="banner" src="https://enjoykickback.com/wp-content/uploads/2020/03/high-quality-coffee-bean-1170x684.jpg">
+    </div>
+      <div class="banner">
+        <img class="banner-pic" src="https://enjoykickback.com/wp-content/uploads/2020/03/high-quality-coffee-bean-1170x684.jpg">
       </div>
       <br>
-    <div class="form-align">
+    <div class="form-align" class="function">
                 <h1>Order Here!</h1>
 
         <form onsubmit="onSubmit()">
                 <div class="align-box">
-                <label for="name" >Full Name:</label>
+                <label >Full Name:</label>
                 <br>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name-input">
                 <br>
-                <label for="name" >Email Address:</label>
+                <label >Email Address:</label>
                 <br>
                 <input type="text" name="email" id="email">
                 </div>
                     <p> We'll never share your email with anyone else.</p>
         <div class="container">
             <div>
-                <h1>What's your poison?</h1>
+                <h1 class="poison">What's your poison?</h1>
                     <input type="radio" name="coffee" id="Coffee" value="Coffee">
                     <label for="Coffee" >Coffee</label>
                     <br>
@@ -51,18 +61,18 @@
                     <label for="Latte" >Latte</label>
             </div>
             <div>
-                <h1>Any Shots?</h1>
-                    <input type="checkbox" id="Espresso" name="shot" value="Espresso">
+                <h1 class="shots">Any Shots?</h1>
+                    <input type="checkbox" id="Espresso" name="shots" value="Espresso">
                     <label for="Espresso" >Espresso</label>
                     <br>
-                    <input type="checkbox" id="Caramel" name="shot" value="Caramel">
+                    <input type="checkbox" id="Caramel" name="shots" value="Caramel">
                     <label for="Caramel" >Caramel</label>
                     <br>
-                    <input type="checkbox" id="Hazelnut" name="shot" value="Hazelnut">
+                    <input type="checkbox" id="Hazelnut" name="shots" value="Hazelnut">
                     <label for="Hazelnut" >Hazelnut</label>
             </div>
             <div>
-                <h1>Want Milk?</h1>
+                <h1 class="milk">Want Milk?</h1>
                     <input type="radio" name="milk" id="Whole Milk" value="Whole Milk">
                     <label for="Whole Milk" >Whole Milk</label>
                     <br>
@@ -80,9 +90,10 @@
                 <div class="align-box">
                     <input type="text" name="notes" id="notes">
                 </div>
+                <button class="submitbutton" onclick="getForm()">Submit</button>
     </div>
       </form>
     
-    
+    <script src="capstone1.js"></script>
 </body>
 </html>
